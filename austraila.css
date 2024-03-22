@@ -1,0 +1,98 @@
+/* container-one start */
+:root {
+  --primary-color: #16449A;
+  --primary-color-dark: #1D3E74;
+  --bg-color: #F9FAFE;
+  --secondary-color: #F4041D;
+  --secondary-color-dark: #551212;
+  --text-color: #111111;
+  --white: #FFFFFF;
+  --max-width: 1200px;
+  --gray: #e4e4e4ee;
+  --dark-gray: #444444;
+}
+
+
+.container-one {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 4rem 1rem 2rem 1rem;
+  align-items: center;
+  color: var(--text-color);
+}
+.sub-container-one-one {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.5rem;
+}
+.container-one h5 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0px 0px 1rem 0px;
+  color: var(--primary-color);
+}
+.container-one p {
+  font-size: 1rem;
+  text-align: justify;
+}
+/* styling table */
+.container-one table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  height: 650px;
+}
+.container-one table td{
+  border-top: 1px solid var(--secondary-color);
+  border-right: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+  padding: 12px;
+}
+.container-one table tr:nth-child(even){
+  background-color: #F2F2F2;
+}
+.container-one table tr:hover {
+  background-color: #ddd;
+}
+.container-one table th {
+  padding: 12px 0px 12px 12px ;
+  background-color: var(--primary-color-dark);
+  color: #04AA6D;
+  color: white;
+  border-top: 1px solid var(--secondary-color);
+  border-left: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+
+
+.hero-container {
+  background-image: url('images/louie-martinez-IocJwyqRv3M-unsplash.jpg');
+  height: 431px;
+  background-position: center;
+  background-size: cover;
+  z-index: -1000;
+  width: auto;
+}
+.hero-container-brightness {
+  backdrop-filter: brightness(50%);
+  height: 27rem;
+  z-index: -1000;
+}
+.hero-container h1 {
+  color: var(--white);
+  transform: translate(15%, 50%);
+  font-size: 100px;
+  width: fit-content;
+}
+.hero-container h5 {
+  font-size: 1.5rem;
+  color: var(--white);
+  text-align: center;
+  margin: auto;
+  width: 700px;
+  transform: translate(0%, 125%);
+}
+/* hero-container end */
+/* end of styling table */
+/* end of container-one */
